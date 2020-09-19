@@ -2,7 +2,7 @@
   hosts: all
   gather_facts: false
   vars:
-    password: {{ ansible_password }}
+    - password: {{ ansible_password }}
   tasks:
   
     - name: Display Username from Vault
@@ -11,7 +11,7 @@
         
     - name: Display Password from Vault
       debug:
-        msg: "{{ ansible_password }}"
+        msg: "{{ password }}"
         
     - name: Test connection to host
       ping:  

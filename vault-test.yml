@@ -2,7 +2,7 @@
   hosts: all
   gather_facts: false
   vars:
-    - password: {{ ansible_password }}
+    - password: '{{ ansible_password }}'
   tasks:
   
     - name: Display Username from Vault

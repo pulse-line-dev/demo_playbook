@@ -9,9 +9,6 @@
       debug:
         msg: "{{ ansible_user }}"
         
-    - name: Display Password from Vault
-      debug:
-        msg: "{{ password }}"
-        
-    - name: Test connection to host
-      ping:  
+    - name: Test
+      shell:
+        cmd: ifconfig

@@ -9,7 +9,7 @@
         
     - name: Display Password from Vault
       debug:
-        msg: "{{ ansible_password }}"
+        msg: "{{ ansible_fqdn }}"
         
     - name: Test connection to host
       ping:  

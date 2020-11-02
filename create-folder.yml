@@ -1,9 +1,17 @@
   
-- name: Hello World Sample
+- name: Hello World Sample-1
   hosts: all
   tasks:
     - name: Create a directory if it does not exist
       file:
-        path: /root/created-by-awx-automatically
+        path: /root/created-by-awx-automatically-1
+        state: directory
+        mode: '0755'
+- name: Hello World Sample-2
+  hosts: all
+  tasks:
+    - name: Create a directory if it does not exist
+      file:
+        path: /root/created-by-awx-automatically-2
         state: directory
         mode: '0755'
